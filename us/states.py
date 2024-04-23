@@ -55,7 +55,7 @@ class State:
             "cd": urljoin(base, f"CD/CD118/tl_2020_{fips}_cd118.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/CD/CD118/tl_2020_08_cd118.zip
             "county": urljoin(base, f"COUNTY/tl_2020_us_county.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/COUNTY/tl_2020_us_county.zip
             "state": urljoin(base, f"STATE/tl_2020_us_state.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/STATE/tl_2020_us_state.zip
-            "zcta": urljoin(base, f"ZCTA520/tl_2020_{fips}_zcta520.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/ZCTA520/tl_2020_us_zcta520.zip
+            "zcta": urljoin(base, f"ZCTA520/tl_2020_us_zcta520.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/ZCTA520/tl_2020_us_zcta520.zip
             "block": urljoin(base, f"TABBLOCK20/tl_2020_{fips}_tabblock20.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/TABBLOCK20/tl_2020_46_tabblock20.zip
             "blockgroup": urljoin(base, f"BG/tl_2020_{fips}_bg.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/BG/tl_2020_46_bg.zip
         }
