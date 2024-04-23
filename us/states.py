@@ -49,15 +49,15 @@ class State:
         if not fips:
             return None
 
-        base = "https://www2.census.gov/geo/tiger/TIGER2010/"
+        base = "https://www2.census.gov/geo/tiger/TIGER2020/"
         urls = {
-            "tract": urljoin(base, f"TRACT/2010/tl_2010_{fips}_tract10.zip"),
-            "cd": urljoin(base, f"CD/111/tl_2010_{fips}_cd111.zip"),
-            "county": urljoin(base, f"COUNTY/2010/tl_2010_{fips}_county10.zip"),
-            "state": urljoin(base, f"STATE/2010/tl_2010_{fips}_state10.zip"),
-            "zcta": urljoin(base, f"ZCTA5/2010/tl_2010_{fips}_zcta510.zip"),
-            "block": urljoin(base, f"TABBLOCK/2010/tl_2010_{fips}_tabblock10.zip"),
-            "blockgroup": urljoin(base, f"BG/2010/tl_2010_{fips}_bg10.zip"),
+            "tract": urljoin(base, f"TRACT/tl_2020_{fips}_tract.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/TRACT/tl_2020_17_tract.zip
+            "cd": urljoin(base, f"CD/CD118/tl_2020_{fips}_cd118.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/CD/CD118/tl_2020_08_cd118.zip
+            "county": urljoin(base, f"COUNTY/tl_2020_us_county.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/COUNTY/tl_2020_us_county.zip
+            "state": urljoin(base, f"STATE/tl_2020_us_state.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/STATE/tl_2020_us_state.zip
+            "zcta": urljoin(base, f"ZCTA520/tl_2020_{fips}_zcta520.zip"), # all states combined https://www2.census.gov/geo/tiger/TIGER2020/ZCTA520/tl_2020_us_zcta520.zip
+            "block": urljoin(base, f"TABBLOCK20/tl_2020_{fips}_tabblock20.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/TABBLOCK20/tl_2020_46_tabblock20.zip
+            "blockgroup": urljoin(base, f"BG/tl_2020_{fips}_bg.zip"), # https://www2.census.gov/geo/tiger/TIGER2020/BG/tl_2020_46_bg.zip
         }
 
         return urls
